@@ -2,15 +2,7 @@ MiGroup:  a web site for checking in and checking out participants from meetings
 
 0. Licensing
 
-   At present, please do not distribute.  Later I'll release it for free distribution.
-
-   There is no warranty of any sort.  
-
-   I would like for someone to donate an image to replace logo.png, as a giveaway.
-
---
-
-  The included Skranji font has a different licensing agreement.  See fonts/OFL.txt    for its licensing information.
+	This project is licensed under the GNU GPL v3 license. You can find the more info on the license in GPL.txt
 
 ---
 I.  Purpose
