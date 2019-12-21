@@ -1,0 +1,6 @@
+1. Use code similar to dateFunctions to allow users to choose groups to belong to in the user Registration form.
+2. Edit getUserInfo in cookiefunctions.php to handle multiple site names
+
+11/15/2019
+Added groups to user registration form
+Currently adding code to registration.php to handle the added groups

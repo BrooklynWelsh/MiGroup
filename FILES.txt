@@ -1,0 +1,68 @@
+FILES.txt			this file
+README.txt			getting started, general info
+GPL.txt				the license
+
+style.css			the CSS file:  colors, fonts, other cosmetic details
+
+fonts/*				the fonts
+
+logo.png			the image in the header
+
+jquery/*			jquery library file. 
+
+	Pages
+
+index.php			the main page
+  calendar.php
+    checkouthandler.php		handles checkouts/checkins
+    deleteguesthandler.php	handles requests to delete guests, made by clicking in calendar
+  usercenter.php		right column:  things you can do beyond ckin/ckout
+  loginform.php	
+	
+  administratorforms.php	Right side of user center -- if you're admin
+  addguestform.php
+    addguestshandler.php
+  addspecialmeetingform.php	  ...add a meeting not on regular night
+  deletedateform.php
+    adddeletedateshandler.php	Add that date, or delete it
+
+setup.php			If there are no dates, we assume the site was just installed,
+				  and come here to set up meeting day, then change
+				  admin profile information
+
+changeprofile.php
+  changeprofileform.php
+  changeprofilefunctions.php	
+
+changeweekdayofmeeting.php
+  changeweekdayfunctions.php
+
+manageusers.php  		A page for changing admin rights and deleting.
+  manageusers/deleteusersform.php		  ...and the two forms it contains
+  manageusers/manageadminstatusform.php	
+  manageadminstatushandler.php
+  deleteuserhandler.php
+
+registration.php		A page for registering a new user
+  registrationform.hmtl		  ...the form it contains
+
+
+	Parts of pages
+				  
+header.html
+footer.php			Copyright notice
+
+
+	Shared things, mostly in utils
+autoupdate.php			automatically erase old meetings and make new ones
+cookiefunctions.php		functions related to cookies and being logged in
+datefunctions.php		functions related to dates
+dbconnection.php		connect to the database
+globals.php			global variables you may want to customize
+../logout.php			...logging out
+queryfunctions.php		functions for prepared MySQL queries
+security.php			sanitize form input; do encryption; log in/out  
+warnings.php			functions to print error messages to screen
+
+
+

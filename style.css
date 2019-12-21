@@ -1,0 +1,335 @@
+﻿/* 
+	--------------------------------------------
+				  style.css
+					Yu Fu
+				  2015-10-3
+				  Edits 2016-05 by W Briggs
+				  Edits 2019-11 by Brooklyn Welsh
+	--------------------------------------------
+	This is the style css file for the Mi-Group web site.
+	--
+
+	Mi-Group:  a web site for keeping track of checkouts for a small-group organization.
+	Copyright (C) 2015-2016 Yu Fu and Will Briggs of Lynchburg College.
+
+	  This program is free software: you can redistribute it and/or modify
+	  it under the terms of the GNU General Public License as published by
+	  the Free Software Foundation, either version 3 of the License, or
+	  (at your option) any later version.
+
+	  This program is distributed in the hope that it will be useful,
+	  but WITHOUT ANY WARRANTY; without even the implied warranty of
+	  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+	  GNU General Public License for more details.
+
+	  You should have received a copy of the GNU General Public License
+	  along with this program.  (It's in the file GPL.txt.)  If not, see
+	   <http://www.gnu.org/licenses/>.
+*/
+/* @font-face 
+{
+    font-family: "Skranji";
+    src: url(fonts/Skranji-Regular.ttf) format("truetype");
+}
+@font-face 
+{
+    font-family: "SkranjiBold";
+    src: url(fonts/Skranji-Bold.ttf) format("truetype");
+} */
+
+
+/* this is calender table title
+*/
+
+table{
+		border-collapse: collapse;
+}
+
+input[type=button], input[type=submit]
+{
+	background-color: #001f3f;
+    color: #FFFFF0;
+}
+
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+body
+{
+	text-align:center;
+	margin: 0px 0px 0px 2px;
+    background-color:#FFFFF0;
+	background: #FFFFF0;
+}
+
+a
+{
+	font-weight: bolder;
+}
+
+.profileBox
+{
+	margin: 0 auto;
+	width: 600px;
+	padding: 0;	
+}
+
+.profileBox legend
+{
+	display:block;
+    background-color: #001f3f;
+    color: white;
+    margin: auto;
+    height: 2em;
+	width: 100%;
+	font-size: 1.5em;
+	font-weight: bolder;
+	text-align: center;
+	padding-top: 15px;
+}
+
+.biggerBox 
+{
+	margin: 0 auto;
+	padding: 0;	
+}
+
+.biggerBox table 
+{
+	margin: 0 auto;
+	
+}
+
+.biggerBox fieldset
+{
+	padding: 0;
+}
+
+.biggerBox legend
+{
+	display:block;
+    background-color: #001f3f;
+    color: white;
+    margin: auto;
+    height: 2em;
+	width: 100%;
+	font-size: 1.5em;
+	font-weight: bolder;
+	text-align: center;
+	padding-top: 15px;
+}
+
+.controls legend
+{
+    background-color: #001f3f;
+    color: white;
+	width: 100%;
+    height: 1.8em;
+	font-size: 18px;
+	font-weight: bolder;
+}
+
+.controls fieldset
+{
+	padding: 0;
+	border: 0;
+	margin: 0;
+}
+
+.controls tr
+{
+	border: 3px groove;
+}
+
+.controls table
+{
+	border-collapse: separate;
+	border-spacing: 0 15px;
+}
+
+table tr td.toprow
+{
+	
+	border: 3px solid grey;
+    padding: 15px;
+    border-spacing: 0px;
+    margin: 0px;
+    background-color: #001f3f;
+    color: white;
+	white-space: pre-wrap;
+	width: 17%;
+	text-align:center; 
+	font-size: 18px;
+	font-weight: bolder;
+}
+table tr td.topright
+{
+	border-left:1px solid black;
+	border-top:1px solid black;
+	border-bottom:1px solid black;
+	border-right:1px solid black;	
+	text-align:center;
+}
+
+/* this is calender table
+    infomation sowed
+*/
+.calendar .calendar td{
+	border: 3px inset grey;
+    width: auto;
+}
+
+table tr td.date
+{
+	border-left:1px solid black;
+	border-bottom:1px solid black;
+	text-align:center;
+	border: 3px inset grey;
+    width: auto;
+	width:12%;
+}
+table tr td.con
+{
+	border-left:1px solid black;
+	border-bottom:1px solid black;
+	text-align:center;
+	width:8%;
+	border: 3px inset grey;
+    width: auto;
+}
+table tr td.but
+{
+	border-left:1px solid black;
+	border-bottom:1px solid black;
+	text-align:center;
+	width:8%;
+}
+table tr td.name
+{
+	border-left:1px solid black;
+	border-right:1px solid black;
+	border-bottom:1px solid black;
+	border: 3px inset grey;
+    width: auto;
+	text-align:left;
+	width:40%;
+	word-wrap:break-word;
+	word-break:keep-all;
+}
+
+div.info	/* Used for an info text box */
+{
+	text-align:left;
+	font-weight:bold;
+}
+
+footer p{
+    font-size: 16px;
+    clear: both;
+    text-align: center;
+}
+
+body,input,textarea
+{
+	font-size:16px;
+}
+
+/*for the title of the site, in the header */
+.header h1{
+  color: white;
+  background-color: #001f3f;
+  padding: 20px 10px;
+  text-align: center;
+  margin: 0 0 1.5em 0;
+  letter-spacing: 1px;
+  
+}
+
+#wheel_left{ 
+    float: left;        /* CSS for the two medicine wheels in the header */
+    opacity: 0.7
+}
+
+#wheel_right{
+    float: right;
+    opacity: 0.7;
+}
+
+.footer
+{
+	font-size:14px;
+}
+
+.line
+{
+	border-color: black;
+}
+
+/*
+This box class is used to resize the outside of certain small forms
+_Table______
+|            |
+| login      |
+|            |
+|            |
+_________
+*/
+.box 
+{
+   width :250px; 
+}
+  
+.biggerBox 
+{
+	max-width:650px;
+}
+.calendar
+{
+	width: 600px;
+}  
+
+.calendar legend
+{
+	font-size: 18px;
+	font-weight: bolder;
+	text-align: center;
+}
+
+.calendar fieldset{
+	border: none;
+}
+
+/* This is for forms, to give them an outline.  Sometimes fieldset doens't work right. */
+.outlineForForm
+{
+    border-color:#bbbbbb;
+    border-style:groove;
+    border-width:2px;
+    vertical-align:top;
+}
+  
+/* For messages, bold and big, about an action the user just took & how it turned out. */
+
+.warning
+{
+	color: #b00100;  /* RED */
+	text-align: center;
+	font-size:x-large;
+	padding:10px;
+}
+
+/* Some buttons are member's names, and should look just like links. This is for checkin & checkout. */
+.linkbutton
+{
+	border: none;
+	padding: 0!important;
+	color: #551A8b; /* link color, because they're links */
+	background: inherit;
+    font-family: inherit; 
+	font-weight: bolder;
+    font-size: inherit;
+    cursor:pointer;
+    text-decoration: underline;
+}	
+

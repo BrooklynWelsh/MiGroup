@@ -1,0 +1,216 @@
+﻿/* 
+	--------------------------------------------
+				  style.css
+					Yu Fu
+				  2015-10-3
+				  Edits 2016-05 by W Briggs
+	--------------------------------------------
+	This is the style css file for the Mi-Group web site.
+	--
+
+	Mi-Group:  a web site for keeping track of checkouts for a small-group organization.
+	Copyright (C) 2015-2016 Yu Fu and Will Briggs of Lynchburg College.
+
+	  This program is free software: you can redistribute it and/or modify
+	  it under the terms of the GNU General Public License as published by
+	  the Free Software Foundation, either version 3 of the License, or
+	  (at your option) any later version.
+
+	  This program is distributed in the hope that it will be useful,
+	  but WITHOUT ANY WARRANTY; without even the implied warranty of
+	  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+	  GNU General Public License for more details.
+
+	  You should have received a copy of the GNU General Public License
+	  along with this program.  (It's in the file GPL.txt.)  If not, see
+	   <http://www.gnu.org/licenses/>.
+*/
+@font-face 
+{
+    font-family: "Skranji";
+    src: url(fonts/Skranji-Regular.ttf) format("truetype");
+}
+@font-face 
+{
+    font-family: "SkranjiBold";
+    src: url(fonts/Skranji-Bold.ttf) format("truetype");
+}
+
+
+/* this is calender table title
+*/
+
+table tr td.toprow
+{
+	border-left:1px solid black;
+	border-top:1px solid black;
+	border-bottom:1px solid black;
+	text-align:center;
+}
+table tr td.topright
+{
+	border-left:1px solid black;
+	border-top:1px solid black;
+	border-bottom:1px solid black;
+	border-right:1px solid black;	
+	text-align:center;
+}
+
+/* this is calender table
+    infomation sowed
+*/
+table tr td.date
+{
+	border-left:1px solid black;
+	border-bottom:1px solid black;
+	text-align:center;
+	width:12%;
+}
+table tr td.con
+{
+	border-left:1px solid black;
+	border-bottom:1px solid black;
+	text-align:center;
+	width:8%;
+}
+table tr td.but
+{
+	border-left:1px solid black;
+	border-bottom:1px solid black;
+	text-align:center;
+	width:8%;
+}
+table tr td.name
+{
+	border-left:1px solid black;
+	border-right:1px solid black;
+	border-bottom:1px solid black;
+	text-align:left;
+	width:40%;
+	word-wrap:break-word;
+	word-break:keep-all;
+}
+
+body
+{
+	text-align:center;
+	color:#000000;
+	background:#aaa111;
+    font-family: "Skranji", Verdana, Tahoma;
+    min-width: 500px;
+}
+
+div.info	/* Used for an info text box */
+{
+	text-align:left;
+	font-family:Verdana, Tahoma;
+	font-weight:bold;
+}
+
+div.header
+{
+	width: 100%;
+	text-align: center;
+	background: #bbbbbb; 
+	font-family: "SkranjiBold", Verdana, Tahoma;
+	outline: 4px solid #b00100; /* RED */
+}
+
+div.footer
+{
+	/*height: 100px; */width: 100%;
+	text-align: center;
+	background: #bbbbbb; 
+	font-family: "Skranji", Verdana, Tahoma;
+	outline: 4px solid #b00100; /* RED */
+}
+
+body,input,textarea
+{
+	font-size:16px;
+}
+
+/*for the title of the site, in the header */
+.title
+{
+	text-align:center;
+	font-size:40px;
+    color: black;
+    text-shadow:
+    	-1px -1px 0 #FFF,
+   	 	1px -1px 0 #FFF,
+   	 	-1px 1px 0 #FFF,
+    	1px 1px 0 #FFF;       
+}
+
+.footer
+{
+	font-size:14px;
+}
+
+.line
+{
+	border-color: black;
+}
+
+/*
+This box class is used to resize the outside of certain small forms
+_Table______
+|            |
+| login      |
+|            |
+|            |
+_________
+*/
+.box 
+{
+   width :250px; 
+}
+  
+.biggerBox 
+{
+	max-width:500px;
+}
+
+.profileBox
+{
+	width: 600px;	
+
+}
+.calendar
+{
+	width: 600px;
+}  
+
+/* This is for forms, to give them an outline.  Sometimes fieldset doens't work right. */
+.outlineForForm
+{
+    border-color:#bbbbbb;
+    border-style:groove;
+    border-width:2px;
+    vertical-align:top;
+}
+  
+/* For messages, bold and big, about an action the user just took & how it turned out. */
+
+.warning
+{
+	color: #b00100;  /* RED */
+	text-align: center;
+	font-size:x-large;
+	padding:10px;
+}
+
+/* Some buttons are member's names, and should look just like links. This is for checkin & checkout. */
+.linkbutton
+{
+	border: none;
+	padding: 0!important;
+	color: #551A8b; /* link color, because they're links */
+	background: inherit;
+    font-family: inherit; 
+    font-size: inherit;
+    cursor:pointer;
+    text-decoration: underline;
+}	
+
